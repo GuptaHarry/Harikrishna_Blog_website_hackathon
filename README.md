@@ -29,3 +29,6 @@ blog-script.js        notes-script.js
 
 
 all icons are used from Boxicons Website.
+
+Insipration for text ediotr
+https://plainenglish.io/blog/make-a-rich-text-editor-with-javascript-in-5-minutes-ee8025694e76
