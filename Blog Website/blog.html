@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Website</title>
+    <link rel="stylesheet" href="blog-style.css">
+</head>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<body>
+
+<div class="outer">
+    <div class="header">
+        <h1><i class='bx bxl-blogger bx-rotate-180' style='color:aqua'  ></i> Let's Blog </h1>
+        <button class="create-blog-btn" onclick="openModal()">Create New Blog</button>
+
+        <button class="home-btn" onclick="window.location.href='index.html'">Home  <i class='bx bx-home-alt-2' style='color:#ece1e1' ></i></button>
+    </div>
+
+    <div id="blogContainer" class="blog-container">
+        <!-- Blogs will be rendered here -->
+    </div>
+
+    <div id="blogModal" class="modal">
+        <div class="modal-content">
+            <h2 id="modalTitle">Create New Blog  </h2>
+            <form id="blogForm">
+                <div class="form-group">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="imageUrl">Image URL:</label>
+                    <input type="text" id="imageUrl" placeholder="Enter image URL or leave empty for default image">
+                </div>
+                <div class="form-group">
+                    <label for="category">Category:</label>
+                    <select id="category" required>
+                        <option value="Tech">Tech</option>
+                        <option value="Food">Food</option>
+                        <option value="Travel">Travel</option>
+                        <option value="Business">Business</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="rating">Rating:</label>
+                    <select id="rating" required>
+                        <option value="1">⭐</option>
+                        <option value="2">⭐⭐</option>
+                        <option value="3">⭐⭐⭐</option>
+                        <option value="4">⭐⭐⭐⭐</option>
+                        <option value="5">⭐⭐⭐⭐⭐</option>
+                    </select>
+                </div>
+                <div class="text-editor">
+                    <div class="editor-toolbar">
+                        <button type="button" onclick="execCommand('bold')">Bold</button>
+                        <button type="button" onclick="execCommand('italic')">Italic</button>
+                        <button type="button" onclick="execCommand('underline')">Underline</button>
+                        <button type="button" onclick="execCommand('formatBlock', 'h1')">H1</button>
+                        <button type="button" onclick="execCommand('formatBlock', 'h2')">H2</button>
+                        <button type="button" onclick="execCommand('insertUnorderedList')">Bullet List</button>
+                    </div>
+                    <div class="editor-content" id="editor" contenteditable="true"></div>
+                </div>
+                <div class="form-buttons">
+                    <button type="button" class="cancel-btn" onclick="closeModal()">Cancel</button>
+                    <button type="submit" class="save-btn">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+   <script src="blog-script.js"></script>
+</body>
+</html>
+

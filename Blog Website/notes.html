@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+       <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+       <link rel="stylesheet" href="notes-style.css">
+
+</head>
+<body>
+
+<div class="outer">
+    <div class="header">
+        <h2><i class='bx bxl-blogger bx-rotate-180' style='color:aqua'  ></i> Let's Blog </h2>
+        <button class="create-blog-btn" onclick="openModal()">New Note</button>
+
+        <button class="home-btn" onclick="window.location.href='index.html'">Home  <i class='bx bx-home-alt-2' style='color:#ece1e1' ></i></button>
+    </div>
+
+    <div id="notesContainer" class="notes-container">
+        <!-- Notes will be rendered here -->
+    </div>
+
+    <div id="noteModal" class="modal">
+        <div class="modal-content">
+            <h2 id="modalTitle">Create New Note</h2>
+            <form id="noteForm">
+                <div class="form-group">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" required>
+                </div>
+                <div class="text-editor">
+                    <div class="editor-toolbar">
+                        <button type="button" onclick="execCommand('bold')">Bold</button>
+                        <button type="button" onclick="execCommand('italic')">Italic</button>
+                        <button type="button" onclick="execCommand('underline')">Underline</button>
+                        <button type="button" onclick="execCommand('formatBlock', 'h1')">H1</button>
+                        <button type="button" onclick="execCommand('formatBlock', 'h2')">H2</button>
+                        <button type="button" onclick="execCommand('insertUnorderedList')">Bullet List</button>
+                    </div>
+                    <div class="editor-content" id="editor" contenteditable="true"></div>
+                </div>
+                <div class="form-buttons">
+                    <button type="button" onclick="closeModal()">Cancel</button>
+                    <button type="submit">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+    
+<script src="notes-script.js"></script>
+</body>
+</html>

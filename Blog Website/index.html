@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    
+<div class="outer">
+<header>
+    <nav class="nav">
+        <h1 class="logo"><i class='bx bxl-blogger bx-rotate-180' style='color:aqua'  ></i> Let's Blog</h1>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#notes">Notes</a></li>
+            <li><a href="#about">About</a></li>
+
+        </ul>
+       </nav>
+    
+</header>
+
+
+  <div class="hero-content">
+             <div  class="hero-img">
+                <div class="text-overlay">
+                    <h1 class="typing-animation">Welcome to Let's Blog</h1>
+                    <p class="sub-text">Let's Blog together and share</p>
+                  </div>
+                  <div class="hero-buttons">
+                    <button class="hero-btn create-btn" onclick="window.location.href='blog.html'">Create Blogs</button>
+                    <button class="hero-btn notes-btn" onclick="window.location.href='notes.html'">Make Notes</button>
+                  </div>
+     
+  </div>
+
+  <div class="recent-blogs-section" id="blogs">
+    <h2 class="section-title">Featured Blogs</h2>
+    <div class="blog-cards-container">
+      <!-- Blog Card 1 -->
+      <div class="blog-card">
+        <img src="images/hackathon.png" alt="Blog Image" class="blog-image">
+        <div class="blog-content">
+          <h3 class="blog-title">My Hackathons <div><i class='bx bx-user'></i> <i class='bx bx-share bx-flip-horizontal' style='color:#464242'  ></i> <i class='bx bx-heart' style='color:#e05555'  ></i></div></h3>
+          <span class="blog-category">Category: Tech</span>
+          <p class="blog-snippet">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor adipisci consequuntur nihil tempore molestiae necessitatibus quidem ipsam commodi nobis in, asperiores maxime repellat magnam amet est eaque quaerat aliquid sed.
+          </p>
+          <div class="blog-rating">Rating: ⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+      
+      <!-- Blog Card 2 -->
+      <div class="blog-card">
+        <img src="images/dsa.jpg" alt="Blog Image" class="blog-image">
+        <div class="blog-content">
+          <h3 class="blog-title">My DSA Journey <div><i class='bx bx-user'></i> <i class='bx bx-share bx-flip-horizontal' style='color:#464242'  ></i> <i class='bx bx-heart' style='color:#e05555'  ></i></div></h3>
+          <span class="blog-category">Category: Tech</span>
+          <p class="blog-snippet">
+           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam repudiandae adipisci dolor ipsa ea. Qui soluta praesentium hic molestiae eligendi libero, veniam nostrum mollitia ab, vitae quisquam maiores officia dolorem.
+          </p>
+          <div class="blog-rating">Rating: ⭐⭐⭐⭐</div>
+        </div>
+      </div>
+  
+      <!-- Blog Card 3 -->
+      <div class="blog-card">
+        <img src="images/kaitlyn-baker-vZJdYl5JVXY-unsplash.jpg" alt="Blog Image" class="blog-image">
+        <div class="blog-content">
+          <h3 class="blog-title">Web Development <div><i class='bx bx-user'></i> <i class='bx bx-share bx-flip-horizontal' style='color:#464242'  ></i> <i class='bx bx-heart' style='color:#e05555'  ></i></div></h3>
+          <span class="blog-category">Category: Tech</span>
+          <p class="blog-snippet">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam minus ab molestias aperiam, praesentium voluptate earum dolorum dicta consequatur itaque non optio maiores, quam at eaque? Sit, sed. Officia, facere!
+        </p>
+          <div class="blog-rating">Rating: ⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+      
+      <!-- Repeat 3 more blog cards for a total of 6 -->
+      <div class="blog-card">
+        <img src="images/dishes.jpg" alt="Blog Image" class="blog-image">
+        <div class="blog-content">
+          <h3 class="blog-title">Favourite Dishes <div><i class='bx bx-user'></i> <i class='bx bx-share bx-flip-horizontal' style='color:#464242'  ></i> <i class='bx bx-heart' style='color:#e05555'  ></i></div></h3>
+          <span class="blog-category">Category: Food</span>
+          <p class="blog-snippet">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dicta atque provident eos repellendus recusandae reiciendis dignissimos consectetur earum officiis rerum impedit minus, ut numquam, quos cumque velit inventore voluptatum.
+        </p>
+          <div class="blog-rating">Rating: ⭐⭐⭐⭐</div>
+        </div>
+      </div>
+  
+      <div class="blog-card">
+        <img src="images/travel.jpg" alt="Blog Image" class="blog-image">
+        <div class="blog-content">
+          <h3 class="blog-title">Countries To Visit <div><i class='bx bx-user'></i> <i class='bx bx-share bx-flip-horizontal' style='color:#464242'  ></i> <i class='bx bx-heart' style='color:#e05555'  ></i></div></h3>
+          <span class="blog-category">Category: Travel</span>
+          <p class="blog-snippet">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, repellendus! Pariatur illo ducimus deleniti, ad corrupti ipsum aperiam quae voluptate, perferendis voluptatibus praesentium eum? Provident eum sequi odit saepe reprehenderit.          </p>
+          <div class="blog-rating">Rating: ⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+  
+      <div class="blog-card">
+        <img src="images/business.jpg" alt="Blog Image" class="blog-image">
+        <div class="blog-content">
+          <h3 class="blog-title">Business <div><i class='bx bx-user'></i> <i class='bx bx-share bx-flip-horizontal' style='color:#464242'  ></i> <i class='bx bx-heart' style='color:#e05555'  ></i></div></h3>
+          <span class="blog-category">Category: Business </span>
+          <p class="blog-snippet">
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat commodi qui, voluptates accusantium incidunt, fugit, porro reprehenderit voluptatum magni odio molestias totam itaque cumque dolores! Totam in vitae distinctio minus?          </p>
+          <div class="blog-rating">Rating: ⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+    </div>
+  
+</div>
+  
+
+<div class="notes-section" id="notes">
+    <h2 class="notes-heading">Notes</h2>
+    <div class="notes-cards-container">
+      <!-- Note Card 1 -->
+      <div class="note-card" >
+        <h3 class="note-title">My First Note</h3>
+        <span class="note-date">Posted: January 17, 2025</span>
+        <p class="note-content">
+           Creating the blog website for the hackathon using HTML,CSS,JS .
+        </p>
+      </div>
+  
+      <!-- Note Card 2 -->
+      <div class="note-card" >
+        <h3 class="note-title">Web Dev Journey</h3>
+        <span class="note-date">Posted: January 15, 2025</span>
+        <p class="note-content">
+          Rohit Bhaiya had completed HTML,CSS,Javascript,Typescript. 
+        </p>
+      </div>
+  
+      <!-- Note Card 3 -->
+      <div class="note-card" >
+        <h3 class="note-title">Hackathon</h3>
+        <span class="note-date">Posted: January 10, 2025</span>
+        <p class="note-content">
+            Finalise the design , code  for the Blog Website required in hackathon.
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+  
+  <footer>
+    <div class="footer" id="about">
+           <p >Project By Harikrishna Gupta <br> RCOEM NAGPUR</p>
+
+           
+    </div>
+  </footer>
+
+</div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
